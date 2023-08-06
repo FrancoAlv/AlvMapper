@@ -27,10 +27,10 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
+        compileOptions {
+            sourceCompatibility = JavaVersion.VERSION_17
+            targetCompatibility = JavaVersion.VERSION_17
+        }
 
     sourceSets {
         getByName("main") {
@@ -48,6 +48,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation(project(":MapperDecorador"))
-    kapt(project(":Mapper"))
+    implementation("com.github.FrancoAlv:AlvMapperDecoradorFranco:1.0.1")
+    kapt("com.github.FrancoAlv:AlvMapperFranco:1.0.2")
+
 }

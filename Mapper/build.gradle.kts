@@ -16,6 +16,7 @@ addProcesador()
 dependencies {
     implementation (fileTree("dir" to "libs" ,"include" to "[*.jar]"))
     compileOnly(project(":MapperDecorador"))
+    //compileOnly("com.github.FrancoAlv:AlvMapperDecorador:1.0.0")
     implementation(kotlin("stdlib-jdk8"))
 }
 
